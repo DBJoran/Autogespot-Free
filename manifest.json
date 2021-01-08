@@ -1,0 +1,36 @@
+{
+  "description": "Enables the user to view Autogespot for free.",
+  "manifest_version": 2,
+  "name": "Autogespot Free",
+  "version": "1.0",
+  "icons": {
+    "48": "icons/logo-64.png"
+  },
+
+  "permissions": [
+    "<all_urls>"
+  ],
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.autogespot.nl/*", 
+                  "*://*.autogespot.com/*", 
+                  "*://*.autogespot.be/*", 
+                  "*://*.autogespot.fr/*",
+                  "*://*.autogespot.co.uk/*",
+                  "*://*.autogespot.us/*",
+                  "*://*.autogespot.ca/*",
+                  "*://*.autogespot.de/*",
+                  "*://*.autogespot.es/*",
+                  "*://*.autogespot.it/*",
+                  "*://*.autogespot.pl/*",
+                  "*://*.autogespot.ru/*",
+                  "*://*.autogespot.cn/*",
+                  "*://*.autogespot.ro/*",
+                  "*://*.autogespot.rs/*",
+                  "*://*.autogespot.pt/*",
+                  "*://*.autogespot.vn/*"],
+      "js": ["autogespotfree.js"]
+    }
+  ]
+}
